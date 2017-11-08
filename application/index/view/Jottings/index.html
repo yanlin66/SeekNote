@@ -1,0 +1,20 @@
+{include file="indexPublic/header" title="杂记区" /}
+<h2>杂记列表（{$list->total()}）</h2>
+<div class="note-info">
+    {volist name="list" id="jottings" }
+    <div class="note-list">
+        <div class="note-id">
+            ID：{$jottings.id}<br/>
+            标题：{$jottings.title}<br/>
+            类型：{$jottings.type}<br/>
+            时间：{$jottings.time}<br/>
+            来源：{$jottings.author}
+        </div>
+        <div class="note-content">
+            {$jottings.con}
+        </div>
+    </div>
+    {/volist}
+    {$list->render()}
+</div>
+{include file="indexPublic/footer" /}

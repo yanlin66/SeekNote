@@ -1,0 +1,20 @@
+{include file="indexPublic/header" title="笔记区" /}
+<h2>笔记列表（{$list->total()}）</h2>
+<div class="note-info">
+    {volist name="list" id="note" }
+    <div class="note-list">
+        <div class="note-id">
+            ID：{$note.nid}<br/>
+            标题：{$note.nname}<br/>
+            类型：{$note.ctype}<br/>
+            编入时间：{$note.ntime}<br/>
+            查看次数：{$note.nnum}
+        </div>
+        <div class="note-content">
+            {$note.ncon}
+        </div>
+    </div>
+    {/volist}
+    {$list->render()}
+</div>
+{include file="indexPublic/footer" /}

@@ -1,0 +1,124 @@
+{include file="indexPublic/header" title="写入区" /}
+<script type="text/javascript" charset="utf-8" src="/static/utf8-php/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/utf8-php/ueditor.all.min.js"> </script>
+<style>
+    .layui-layer-content{
+        color: #fff !important;
+    }
+</style>
+<div class="title">
+    <ul>
+        <li><a class="active" href="{:url('index/write/one')}"></a>笔记</li>
+        <li><a class="" href="{:url('index/write/scend')}"></a>杂记</li>
+        <li><a></a>话题</li>
+    </ul>
+</div>
+<div class="write-form">
+    <form class="form-horizontal" id="form" method="post" action="{:url('index/write/addnote')}">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">标题</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="请输入标题" name="nname" id="notetitle">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">内容</label>
+            <div class="col-sm-10">
+                <input name="ncon" type="hidden" id="ncon"/>
+                <div id="editor" type="text/plain" style="width:100%;height:300px;"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">时间</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="notetime" placeholder="Time" name="ntime" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">分类</label>
+            <div class="col-sm-10">
+                <select class="form-control" name="ctype" id="notetype">
+                    <option value="0">请输入分类</option>
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                    <option value="js">js</option>
+                    <option value="php">php</option>
+                    <option value="es6">es6</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="nnum" value="0" id="notenum"> 设置初始查阅数
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-danger">提交</button>
+            </div>
+        </div>
+    </form>
+</div>
+<link type="text/css" rel="stylesheet" href="/static/jeDate/skin/jedate.css">
+<script type="text/javascript" src="/static/jeDate/jedate.js"></script>
+<script type="text/javascript" src="/static/layer/layer.js"></script>
+<script>
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('editor',{
+        //工具栏
+        toolbars: [
+            ['fullscreen', 'source', 'undo', 'redo'],
+            ['bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc']
+        ]
+    });
+    //对编辑器的操作最好在编辑器ready之后再做
+    ue.ready(function() {
+        //设置编辑器的内容
+        ue.setContent('请输入内容');
+        //获取html内容，返回: <p>hello</p>
+        var html = ue.getContent();
+        console.log(html);
+        $("#ncon").val(html);
+        //获取纯文本内容，返回: hello
+        var txt = ue.getContentTxt();
+        //console.log(txt);
+    });
+    function yzCon(){
+        $("#ncon").val(UE.getEditor('editor').getContent());
+    }
+    $(function(){
+        //实例化日期
+        $("#notetime").jeDate({
+            format:"YYYY-MM-DD",
+            minDate:"2016-07-08",
+            isShow:true,
+            fixed:true,
+            //层级高度
+            okfun:function(obj) {
+                $("#notetime").val(obj.val);
+            },
+            zIndex:2099,
+        });
+        $("#form1").submit(function(){
+            yzCon();
+            if(!$("#notetitle").val()){
+                layer.msg('请输入标题',{time:1000});
+                return false;
+            }
+            if(!$("#ncon").val()){
+                layer.msg('请输入内容',{time:1000});
+                return false;
+            }
+            if($("#notetype").val()=='0'){
+                layer.msg('请选择分类',{time:1000});
+                return false;
+            }
+        });
+    })
+</script>
+{include file="indexPublic/footer" /}

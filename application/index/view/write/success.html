@@ -1,0 +1,16 @@
+{include file="indexPublic/header" title="保存成功" /}
+<div class="success-tips">
+    <span>{$yes}</span>
+    <div class="btn-warp">
+        {switch name="success"}
+        {case value='note'}
+        <a class="btn btn-success" href="{:url('note/index')}" role="button">GO->Note List</a>
+        {/case}
+        {case value='jottings'}
+        <a class="btn btn-success" href="{:url('jottings/index')}" role="button">GO->Jottings List</a>
+        {/case}
+        {/switch}
+        <a class="btn btn-danger" href="{:url('write/index')}" role="button">继续写入</a>
+    </div>
+</div>
+{include file="indexPublic/footer" /}

@@ -1,0 +1,15 @@
+{include file="indexPublic/header" title="首页" /}
+<h2>信息</h2>
+<div class="index-info">
+    {volist name="list" id="user" }
+    <div class="index-list">
+        ID：{$user.aid}<br/>
+        昵称：{$user.aname}<br/>
+        <p>{$user.acon}</p>
+        职位：{$user.atype}<br/>
+        生日：{$user.atime}<br/>
+        查看次数：{$user.anum}
+    </div>
+    {/volist}
+</div>
+{include file="indexPublic/footer" /}
