@@ -1,5 +1,40 @@
 {include file="indexPublic/header" title="首页" /}
+<style>
+    header{
+        color: #fff;z-index: 9999;background-color: rgba(0,0,0,0);
+    }
+    footer{
+        color: #666;z-index: 9999;background-color: rgba(0,0,0,0);
+    }
+    canvas {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    h2{
+        position: relative;
+        z-index: 9999;color: #fff !important;
+    }
+    .index-info{
+        position: relative;
+        z-index: 9999;
+    }
+    .index-list{
+        color: #fff !important;
+    }
+    .index-list p{
+        color: #fff !important;
+    }
+    #scene {
+        position: fixed;top: 0;left: 0;right: 0;bottom: 0;margin: auto;z-index: 1;
+        background-color: black;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+</style>
 <h2>信息</h2>
+<canvas id='scene'></canvas>
 <div class="index-info">
     {volist name="list" id="user" }
     <div class="index-list">
@@ -12,4 +47,5 @@
     </div>
     {/volist}
 </div>
+<script src="/static/js/nebula.js"></script>
 {include file="indexPublic/footer" /}

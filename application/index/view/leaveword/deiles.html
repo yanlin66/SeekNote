@@ -1,0 +1,59 @@
+{include file="indexPublic/header" title="留言区" /}
+<div class="leaveword-warp">
+    {volist name="say" id="vo"}
+        {switch $vo.type}
+            {case value='1'}
+    <div class="type1">
+        <div class="l-left">
+            <span>{$vo.name}：</span>
+        </div>
+        <div class="l-right">
+            <p>{$vo.say}</p>
+        </div>
+    </div>
+            {/case}
+            {case  value='0'}
+    <div class="type2">
+        <div class="l-left">
+            <p>{$vo.say}</p>
+        </div>
+        <div class="l-right">
+            {$vo.name}：
+        </div>
+    </div>
+            {/case}
+        {/switch}
+    {/volist}
+</div>
+<div class="leaveword-speak">
+    <span>
+    {switch name="ltype"}
+        {case value='seek'}<i>seek</i>{/case}
+        {default/}<i>路人</i>
+    {/switch}
+    发言：
+    </span>
+    <textarea name="say" id="say" cols="30" rows="10" placeholder="请输入想要表达的话"></textarea>
+    <button class="btn btn-success" id="say-btn">提交</button>
+</div>
+<script>
+    $(function(){
+        $("#say-btn").click(function(){
+            var say=$("#say").val();
+            $(".leaveword-warp").append(
+                    ' <div class="type1">\n' +
+                    '       <div class="l-left">\n' +
+                    '             <span>我：</span>\n' +
+                    '       </div>\n' +
+                    '       <div class="l-right">\n' +
+                    '             <p>'+say+'</p>\n' +
+                    '       </div>\n' +
+                    ' </div>'
+            );
+            $.post("",{ user: "John", say: "你是大坏蛋",type:"1"} ,function(data){
+                alert("Data Loaded: " + data);
+            },"json");
+        })
+    })
+</script>
+{include file="indexPublic/footer" /}
