@@ -1,0 +1,225 @@
+header {
+  width: 100%;
+  height: 88px;
+  background-color: #f9f9f9;
+}
+header .head {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+header .head a {
+  margin: 0 30px;
+  font-size: 24px;
+  color: #666;
+  position: relative;
+}
+header .head a:hover {
+  color: #006990;
+  text-decoration: none;
+}
+header .head a:hover:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 2px;
+  background-color: #006990;
+}
+header .head .active {
+  color: #006990;
+  font-weight: 600;
+}
+header .head .active:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 2px;
+  background-color: #006990;
+}
+header .head a:nth-child(1) {
+  margin-left: 0;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 80px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+footer div {
+  width: 100%;
+  line-height: 50px;
+  font-size: 20px;
+  color: #666;
+}
+main {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+}
+main .pagination {
+  margin-left: 35%;
+}
+.title {
+  width: 600px;
+  margin: 0 auto;
+}
+.title ul {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title ul li {
+  width: 25%;
+  font-size: 24px;
+  color: #666;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+.title ul li a {
+  font-size: 28px;
+  color: #666;
+  margin-right: 20px;
+  position: relative;
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.title ul li a:hover {
+  text-decoration: none;
+}
+.title ul li a:before {
+  content: "\e6fa";
+}
+.title ul li .active:before {
+  content: "\e6c5";
+}
+.index-info {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.index-info .index-list {
+  width: 30%;
+  border: 1px solid #ddd;
+  border-radius: 5%;
+  padding: 20px;
+  margin-right: 3%;
+}
+.note-info {
+  width: 100%;
+  margin: 0 auto;
+}
+.note-info .note-list {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.note-info .note-list .note-id {
+  width: 30%;
+  font-size: 18px;
+  border: 1px solid #9acfea;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.note-info .note-list .note-id:before {
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: 30%;
+  width: 120px;
+  height: 2px;
+  background-color: #9acfea;
+}
+.note-info .note-list .note-id:after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: 30%;
+  width: 120px;
+  height: 2px;
+  background-color: #9acfea;
+}
+.note-info .note-list .note-content {
+  width: 60%;
+  font-size: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #9acfea;
+  color: #333;
+  min-height: 167px;
+}
+.note-info .note-list .note-content span {
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.6;
+}
+.note-info .note-list .note-content ul {
+  margin: 20px 0;
+}
+.note-info .note-list .note-content ul li {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #666;
+}
+.write-form {
+  width: 70%;
+  margin: 0 auto;
+}
+.success-tips {
+  width: 100%;
+  padding-top: 100px;
+}
+.success-tips span {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 28px;
+  color: #00A680;
+  line-height: 36px;
+}
+.success-tips .btn-warp {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+.success-tips .btn-warp a {
+  margin-right: 30px;
+  color: #fff;
+}
