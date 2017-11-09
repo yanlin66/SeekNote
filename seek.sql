@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14
+-- version 4.5.2
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-11-09 11:17:28
--- 服务器版本： 5.6.17
--- PHP Version: 5.5.12
+-- Generation Time: 2017-11-09 14:39:03
+-- 服务器版本： 5.7.9
+-- PHP Version: 5.6.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `seek`
@@ -26,6 +26,7 @@ SET time_zone = "+00:00";
 -- 表的结构 `seek_about`
 --
 
+DROP TABLE IF EXISTS `seek_about`;
 CREATE TABLE IF NOT EXISTS `seek_about` (
   `aid` int(11) NOT NULL AUTO_INCREMENT,
   `aname` varchar(255) NOT NULL COMMENT '个人名称',
@@ -34,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `seek_about` (
   `atime` date NOT NULL COMMENT '编写时间',
   `anum` int(11) NOT NULL COMMENT '阅览次数',
   PRIMARY KEY (`aid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `seek_about`
@@ -51,6 +52,7 @@ INSERT INTO `seek_about` (`aid`, `aname`, `acon`, `atype`, `atime`, `anum`) VALU
 -- 表的结构 `seek_jottings`
 --
 
+DROP TABLE IF EXISTS `seek_jottings`;
 CREATE TABLE IF NOT EXISTS `seek_jottings` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL COMMENT '杂记标题',
@@ -59,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `seek_jottings` (
   `type` varchar(255) NOT NULL COMMENT '杂记类型（引用，自写）',
   `author` varchar(255) NOT NULL COMMENT '杂记作者',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `seek_jottings`
@@ -76,24 +78,22 @@ INSERT INTO `seek_jottings` (`id`, `title`, `con`, `time`, `type`, `author`) VAL
 -- 表的结构 `seek_leaver`
 --
 
+DROP TABLE IF EXISTS `seek_leaver`;
 CREATE TABLE IF NOT EXISTS `seek_leaver` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '序号',
   `title` varchar(255) NOT NULL COMMENT '话题',
   `num` int(11) NOT NULL COMMENT '回复量',
   `time` date NOT NULL COMMENT '发起时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `seek_leaver`
 --
 
 INSERT INTO `seek_leaver` (`id`, `title`, `num`, `time`) VALUES
-(1, '来谈谈到底是谁创造的人啊？', 35, '2017-11-09'),
-(2, '来谈谈人有没有可能去银河系外面的星系？', 2, '2017-11-09'),
-(3, '来谈谈有没有人做我的女朋友？', 988899, '2017-11-09'),
-(4, '测试问题', 55, '2017-11-09'),
-(5, '我想去︿(￣︶￣)︿', 0, '2017-11-09');
+(1, '来谈谈到底是谁创造的人啊？', 10, '2017-11-09'),
+(2, '来谈谈人有没有可能去银河系外面的星系？', 3, '2017-11-09');
 
 -- --------------------------------------------------------
 
@@ -101,26 +101,46 @@ INSERT INTO `seek_leaver` (`id`, `title`, `num`, `time`) VALUES
 -- 表的结构 `seek_leaverlist`
 --
 
+DROP TABLE IF EXISTS `seek_leaverlist`;
 CREATE TABLE IF NOT EXISTS `seek_leaverlist` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL COMMENT '对话人',
   `say` text NOT NULL COMMENT '对话',
-  `time` date NOT NULL COMMENT '评论时间',
+  `time` datetime NOT NULL COMMENT '评论时间',
   `cid` int(11) NOT NULL COMMENT '所属分类',
   `type` int(11) NOT NULL COMMENT '我和路人的区别',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `seek_leaverlist`
 --
 
 INSERT INTO `seek_leaverlist` (`id`, `name`, `say`, `time`, `cid`, `type`) VALUES
-(1, '我', '你们是谁', '2017-11-09', 1, 1),
-(2, '路人1', '漫天都是小欣欣', '2017-11-09', 1, 0),
-(3, '路人2', '漫世界都是大SB', '2017-11-09', 1, 0),
-(4, '我', '新问题，注意抢前排--哈', '2017-11-09', 2, 1),
-(5, '我', '新回复喽', '2017-11-09', 1, 1);
+(1, 'seek', '你们是谁', '2017-11-09 00:00:00', 1, 1),
+(2, '老王', '漫天都是小欣欣', '2017-11-09 00:00:00', 1, 0),
+(3, '老李', '漫世界都是大SB', '2017-11-09 00:00:00', 1, 0),
+(4, 'seek', '新问题，注意抢前排--哈', '2017-11-09 00:00:00', 2, 1),
+(5, 'seek', '新回复喽', '2017-11-09 00:00:00', 1, 1),
+(6, '老王', '你真是个傻吊', '2017-11-09 00:00:00', 1, 0),
+(7, 'seek', '你敢骂我，信不信我去找你', '2017-11-09 00:00:00', 1, 1),
+(8, '老王', '来啊，怕你是个毛线', '2017-11-09 00:00:00', 1, 0),
+(9, '老王', '你就是个混蛋', '2017-11-09 00:00:00', 1, 0),
+(12, '老王', '真烦', '2017-11-09 00:00:00', 1, 0),
+(13, 'seek', '老王啊，你就是个傻吊', '2017-11-09 00:00:00', 1, 1),
+(14, '老王', '又是我哈哈 前排', '2017-11-09 00:00:00', 2, 0),
+(15, '老李', '小家伙', '2017-11-09 00:00:00', 2, 0),
+(16, '老板', '小兔崽子', '2017-11-09 00:00:00', 2, 0),
+(17, '老六', '到底行不行，不行睡觉呀', '2017-11-09 00:00:00', 2, 0),
+(18, 'seek', '都给我悄悄的', '2017-11-09 00:00:00', 2, 1),
+(19, 'seek', '小样的一群屌丝', '2017-11-09 00:00:00', 2, 1),
+(20, '66', '666666，睡觉', '2017-11-09 00:00:00', 2, 0),
+(21, '55', '5555 感动', '2017-11-09 00:00:00', 2, 0),
+(22, '8888', '祝你成功', '2017-11-09 00:00:00', 2, 0),
+(23, '333', '333', '2017-11-09 00:00:00', 2, 0),
+(24, '好先生', '好了没，困了', '2017-11-09 00:00:00', 2, 0),
+(25, '11', '最后一次', '2017-11-09 00:00:00', 2, 0),
+(26, 'close', '关机，睡觉', '2017-11-09 00:00:00', 2, 0);
 
 -- --------------------------------------------------------
 
@@ -128,6 +148,7 @@ INSERT INTO `seek_leaverlist` (`id`, `name`, `say`, `time`, `cid`, `type`) VALUE
 -- 表的结构 `seek_note`
 --
 
+DROP TABLE IF EXISTS `seek_note`;
 CREATE TABLE IF NOT EXISTS `seek_note` (
   `nid` int(11) NOT NULL AUTO_INCREMENT,
   `nname` varchar(255) NOT NULL COMMENT '笔记标题',
@@ -136,7 +157,7 @@ CREATE TABLE IF NOT EXISTS `seek_note` (
   `ntime` date NOT NULL COMMENT '笔记编写时间',
   `nnum` int(11) NOT NULL COMMENT '笔记点击数',
   PRIMARY KEY (`nid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=40 ;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `seek_note`

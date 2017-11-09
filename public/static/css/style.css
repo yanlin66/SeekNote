@@ -320,6 +320,7 @@ main .pagination {
   left: 0;
   right: 0;
   margin: auto;
+  visibility: hidden;
   width: 1200px;
   min-height: 150px;
   background-color: #f2f2f2;
@@ -331,6 +332,20 @@ main .pagination {
 .leaveword-speak span {
   font-size: 24px;
   margin-right: 2%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+.leaveword-speak span i {
+  margin-right: 10px;
+}
+.leaveword-speak span input {
+  display: inline-block;
+  font-size: 14px;
+  height: 28px;
+  width: 100px;
+  margin-right: 10px;
 }
 .leaveword-speak textarea {
   display: block;
@@ -339,6 +354,42 @@ main .pagination {
   width: 60%;
   height: 100px;
   border: 1px solid #fff;
+}
+.leaveword-speak #go-right {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 20px;
+  margin: auto;
+  font-size: 36px;
+  line-height: 150px;
+  cursor: pointer;
+}
+.leaveword-speak-open {
+  position: fixed;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1200px;
+  min-height: 150px;
+}
+.leaveword-speak-open #go-speak {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: -80px;
+  margin: auto;
+  display: block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 60px;
+  cursor: pointer;
+  transform: rotateY(180deg);
+  background-color: #aaa;
+  color: #fff;
 }
 .theme-warp {
   width: 1200px;

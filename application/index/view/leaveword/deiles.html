@@ -1,4 +1,12 @@
 {include file="indexPublic/header" title="留言区" /}
+<style>
+    main{
+        padding-bottom: 160px;
+    }
+    .layui-layer-content{
+        color: #fff !important;
+    }
+</style>
 <div class="leaveword-warp">
     {volist name="say" id="vo"}
         {switch $vo.type}
@@ -24,35 +32,84 @@
             {/case}
         {/switch}
     {/volist}
+    <input type="hidden" value="{$cid}" id="fl">
 </div>
 <div class="leaveword-speak">
     <span>
     {switch name="ltype"}
-        {case value='seek'}<i>seek</i>{/case}
-        {default/}<i>路人</i>
+        {case value='seek'}<i type-attr="1">seek</i>{/case}
+        {default/}<i type-attr="0">路人</i><input type="text" placeholder="请输入你的昵称" id="sayname">
     {/switch}
     发言：
     </span>
-    <textarea name="say" id="say" cols="30" rows="10" placeholder="请输入想要表达的话"></textarea>
+    <textarea name="say" id="say" cols="30" rows="10" placeholder="请输入想要表达的话" onfocus="this.placeholder=''" onblur="this.placeholder='请输入想要表达的话'"></textarea>
     <button class="btn btn-success" id="say-btn">提交</button>
+    <i class="iconfont icon-triange_right" id="go-right"></i>
 </div>
+<div class="leaveword-speak-open">
+    <i class="iconfont icon-triange_right" id="go-speak"></i>
+</div>
+<script type="text/javascript" src="/static/layer/layer.js"></script>
 <script>
     $(function(){
+        //说话人
+        var sayperson=$(".leaveword-speak span i").html();
+        //说话的内容
+        var say=$("#say").val();
+        //说话人的身份
+        var saytype=$(".leaveword-speak span i").attr("type-attr");
+        //说话时间
+        var saytime=new Date();
+        var flag=true;
+        //对话框关闭
+        $("#go-right").click(function () {
+            $(".leaveword-speak").css("visibility","hidden");
+            $(".leaveword-speak-open").show();
+        });
+        $("#go-speak").click(function () {
+            $(".leaveword-speak").css("visibility","visible");
+            $(".leaveword-speak-open").hide();
+        });
+        // alert(saytime.toLocaleString());
+        $("#sayname")
+            .focus(function () {
+                this.placeholder='';
+            })
+            .blur(function () {
+                if($(this).val()==""){
+                    layer.msg("昵称不可为空",{"time":1500});
+                    this.placeholder='请输入你的昵称';
+                }else{
+                    flag=false;
+                    sayperson=$("#sayname").val();
+                }
+            });
+        //点击发言
         $("#say-btn").click(function(){
-            var say=$("#say").val();
-            $(".leaveword-warp").append(
-                    ' <div class="type1">\n' +
-                    '       <div class="l-left">\n' +
-                    '             <span>我：</span>\n' +
-                    '       </div>\n' +
-                    '       <div class="l-right">\n' +
-                    '             <p>'+say+'</p>\n' +
-                    '       </div>\n' +
-                    ' </div>'
-            );
-            $.post("",{ user: "John", say: "你是大坏蛋",type:"1"} ,function(data){
-                alert("Data Loaded: " + data);
-            },"json");
+            if(flag){
+                if($("#sayname").val()==""){
+                    layer.msg("请输入您的昵称再发言",{"time":1500});
+                    $("#sayname").focus();
+                    return false;
+                }
+            }
+            say=$("#say").val();
+//            $(".leaveword-warp").append(
+//                    ' <div class="type1">\n' +
+//                    '       <div class="l-left">\n' +
+//                    '             <span>'+sayperson+'：</span>\n' +
+//                    '       </div>\n' +
+//                    '       <div class="l-right">\n' +
+//                    '             <p>'+say+'</p>\n' +
+//                    '       </div>\n' +
+//                    ' </div>'
+//            );
+            $.post("{:url('leaveword/add')}",{ name: sayperson, say: say,cid:$("#fl").val(),type:saytype,time:saytime.toLocaleString()} ,function(data){
+                if(data=="success"){
+                    location.href=''
+                    // location.href='{:url("leaveword/add")}?cid='+$("#fl").val();
+                }
+            });
         })
     })
 </script>
