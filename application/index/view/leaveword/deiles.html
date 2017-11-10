@@ -49,6 +49,7 @@
 <div class="leaveword-speak-open">
     <i class="iconfont icon-triange_right" id="go-speak"></i>
 </div>
+<input type="hidden" value="{$replynum}" id="replynum">
 <script type="text/javascript" src="/static/layer/layer.js"></script>
 <script>
     $(function(){
@@ -61,6 +62,8 @@
         //说话时间
         var saytime=new Date();
         var flag=true;
+        //对应话题回复量
+        var replynum=$("#replynum").val();
         //对话框关闭
         $("#go-right").click(function () {
             $(".leaveword-speak").css("visibility","hidden");
@@ -94,23 +97,27 @@
                 }
             }
             say=$("#say").val();
-//            $(".leaveword-warp").append(
-//                    ' <div class="type1">\n' +
-//                    '       <div class="l-left">\n' +
-//                    '             <span>'+sayperson+'：</span>\n' +
-//                    '       </div>\n' +
-//                    '       <div class="l-right">\n' +
-//                    '             <p>'+say+'</p>\n' +
-//                    '       </div>\n' +
-//                    ' </div>'
-//            );
             $.post("{:url('leaveword/add')}",{ name: sayperson, say: say,cid:$("#fl").val(),type:saytype,time:saytime.toLocaleString()} ,function(data){
-                if(data=="success"){
-                    location.href=''
-                    // location.href='{:url("leaveword/add")}?cid='+$("#fl").val();
+                if(data=="add_success"){
+                    layer.msg("回复成功",{time:1500});
+                    replynum++;
+                    setTimeout(function(){
+                        update();
+                    },1000);
                 }
             });
         })
+        function update(){
+            console.log('执行更新留言回复数量');
+            //方法1
+            //location.href="{:url('leaveword/update')}?cid="+$("#fl").val()+"&num="+replynum;
+            //方法2
+            $.post("{:url('leaveword/update')}",{ cid:$("#fl").val(),num:replynum} ,function(replydata){
+                if(replydata=="reply_success"){
+                    location.href='';
+                }
+            });
+        }
     })
 </script>
 {include file="indexPublic/footer" /}

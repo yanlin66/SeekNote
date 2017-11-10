@@ -21,9 +21,12 @@ class LeavewordController extends Controller
         $leavewordlist = new Leavewordlist();
         // 查询数据集
         $result = Db::query('select * from seek_leaverlist where cid = '.$cid);
-//        dump($result);
+        //dump(count($result));
+        //留言目录里的对应回复数量
+        $replynum=count($result);
         $this->assign('say', $result);
         $catgory='leaveword';
+        $this->assign('replynum', $replynum);
         $this->assign('catgory', $catgory);
         $this->assign('ltype', $ltype);
         $this->assign('cid', $cid);
@@ -36,20 +39,39 @@ class LeavewordController extends Controller
         $leavewordlist = new Leavewordlist();
         // 查询数据集
         if ($leavewordlist->allowField(true)->save(input('post.'))) {
-            echo "success";
+            echo "add_success";
         } else {
-            echo "filed";
+            echo "add_filed";
         }
     }
-    public function update($cid='')
+    //更新方法一
+//    public function update($cid='',$num='')
+//    {
+//        $catgory='leaveword';
+//        $this->assign('catgory', $catgory);
+//        // 更新记录
+//        $result = Db::execute('update seek_leaver set num = '.$num.' where id ='.$cid);
+//        // dump($result);
+//        if($result==1){
+//            return $this->fetch("leaveword/index");
+//        }
+//
+//    }
+    //更新方法二
+    public function update()
     {
         $catgory='leaveword';
         $this->assign('catgory', $catgory);
-        // 查询数据
-        $result_num = Db::query('select num from seek_leaver where id = '.$cid);
+        $cid=$_POST['cid'];
+        $num=$_POST['num'];
         // 更新记录
-        $result = Db::execute('update seek_leaver set num = '.$result_num.' where id = '.$cid);
-        $this->assign('cid', $cid);
-        return $this->fetch("leaveword/deiles");
+        $result = Db::execute('update seek_leaver set num = '.$num.' where id ='.$cid);
+        // dump($result);
+        if($result==1){
+            echo 'reply_success';
+        }else{
+            echo 'reply_field';
+        }
+
     }
 }

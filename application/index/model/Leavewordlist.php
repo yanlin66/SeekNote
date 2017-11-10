@@ -6,4 +6,5 @@ use think\Model;
 class Leavewordlist extends Model
 {
     protected $name  = 'leaverlist';
+
 }
