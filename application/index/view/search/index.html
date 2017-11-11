@@ -1,3 +1,19 @@
 {include file="public/header" title="搜索结果" /}
-
+<style>
+	body{
+		background-color: #f2f2f2;
+	}
+</style>
+{switch name="result"}
+    {case value='1'}
+        <div class="empty-center" style="margin: 10% auto;width: 100%;text-align: center;color: #fa0034;">
+        	<span>功能完善中.....</span>
+        </div>
+    {/case}
+    {case value='2'}
+        <div class="empty-center" style="margin: 10% auto;width: 100%;text-align: center;color: #006900;">
+        	<span>不好意思啊，暂无相关内容! <br><br>换个关键词吧............</span>
+        </div>
+    {/case}
+{/switch}
 {include file="public/footer" /}

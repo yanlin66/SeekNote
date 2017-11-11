@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:86:"D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\leaveword\index.html";i:1510397011;s:84:"D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\public\header.html";i:1510397011;s:84:"D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\public\footer.html";i:1510397011;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:83:"D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html";i:1510399053;s:84:"D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\public\header.html";i:1510397011;s:84:"D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\public\footer.html";i:1510397811;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>留言区</title>
+    <title>搜索结果</title>
     <link rel="stylesheet" href="/static/css/base.css">
     <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/static/font/iconfont.css">
@@ -50,28 +50,20 @@
     </div>
 </header>
 <main>
-<div class="theme-warp">
-    <table class="table table-striped">
-        <thead>
-        <tr>
-            <th width="10%">序号</th>
-            <th width="60%">话题</th>
-            <th width="15%">回复量</th>
-            <th width="15%">发起时间</th>
-        </tr>
-        </thead>
-        <tbody>
-        <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-        <tr>
-            <th scope="row"><?php echo $vo['id']; ?></th>
-            <td><a href="<?php echo url('leaveword/deiles'); ?>?cid=<?php echo $vo['id']; ?>"><?php echo $vo['title']; ?></a></td>
-            <td><?php echo $vo['num']; ?></td>
-            <td><?php echo $vo['time']; ?></td>
-        </tr>
-        <?php endforeach; endif; else: echo "" ;endif; ?>
-        </tbody>
-    </table>
-</div>
+<style>
+	body{
+		background-color: #f2f2f2;
+	}
+</style>
+<?php switch($result): case "1": ?>
+        <div class="empty-center" style="margin: 10% auto;width: 100%;text-align: center;color: #fa0034;">
+        	<span>功能完善中.....</span>
+        </div>
+    <?php break; case "2": ?>
+        <div class="empty-center" style="margin: 10% auto;width: 100%;text-align: center;color: #006900;">
+        	<span>不好意思啊，暂无相关内容! <br><br>换个关键词吧............</span>
+        </div>
+    <?php break; endswitch; ?>
 </main>
 <footer>
     <div>
@@ -98,9 +90,8 @@
             if((event.keyCode || event.which)==13){
                 $.get("<?php echo url('search/select'); ?>",{ search:$("#search").val()},function(data){
                     console.log(data);
-                    location.href="<?php echo url('search/index'); ?>";
-                    if(data=="1"){
-
+                    if(data){
+                    	location.href="<?php echo url('search/index'); ?>?result="+data;
                     }
                 })
             }

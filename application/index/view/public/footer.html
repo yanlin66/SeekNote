@@ -24,9 +24,8 @@
             if((event.keyCode || event.which)==13){
                 $.get("{:url('search/select')}",{ search:$("#search").val()},function(data){
                     console.log(data);
-                    location.href="{:url('search/index')}";
-                    if(data=="1"){
-
+                    if(data){
+                    	location.href="{:url('search/index')}?result="+data;
                     }
                 })
             }

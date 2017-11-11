@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:82:"D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\index\index.html";i:1510225981;s:89:"D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\indexPublic\header.html";i:1510138337;s:89:"D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\indexPublic\footer.html";i:1510138337;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:82:"D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\index\index.html";i:1510397011;s:84:"D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\public\header.html";i:1510397011;s:84:"D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\public\footer.html";i:1510397011;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -44,6 +44,9 @@
             <a href="<?php echo url('leaveword/index'); ?>">留言</a>
             <a href="<?php echo url('write/index'); ?>" class="active" >写入</a>
         <?php break; endswitch; ?>
+        <div class="search_form">
+            <input type="text" name="search" placeholder="请输入关键词" id="search" onfocus="this.placeholder=''" onblur="this.placeholder='请输入关键词'">
+        </div>
     </div>
 </header>
 <main>
@@ -114,7 +117,22 @@
         var ch=window.innerHeight;
         var jh=$("nav").height()+$("header").height()+$("footer").height();
         $("main").css("min-height",(ch-jh)+"px");
-    }
+    };
+    $(function(){
+        //回车搜索
+        $("#search").keydown(function(event){
+            event=document.all?window.event:event;
+            if((event.keyCode || event.which)==13){
+                $.get("<?php echo url('search/select'); ?>",{ search:$("#search").val()},function(data){
+                    console.log(data);
+                    location.href="<?php echo url('search/index'); ?>";
+                    if(data=="1"){
+
+                    }
+                })
+            }
+        });
+    })
 </script>
 </body>
 </html>

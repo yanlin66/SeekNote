@@ -1,0 +1,2088 @@
+---------------------------------------------------------------
+[ 2017-11-11T18:45:04+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] myhome.com/ [运行时间：0.078004s][吞吐率：12.82req/s] [内存消耗：3,961.96kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\index\index.html [ array (
+  0 => 'list',
+  1 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=seek;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `seek_about` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `seek_about` [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2017-11-11T18:45:08+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/select.html?search=
+[ info ] myhome.com/index/search/select.html?search= [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：2,059.55kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'referer' => 'http://myhome.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->select[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: search[D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php:18]
+---------------------------------------------------------------
+[ 2017-11-11T18:45:10+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/select.html?search=
+[ info ] myhome.com/index/search/select.html?search= [运行时间：0.023001s][吞吐率：43.48req/s] [内存消耗：2,059.55kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'referer' => 'http://myhome.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->select[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: search[D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php:18]
+---------------------------------------------------------------
+[ 2017-11-11T18:45:10+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/select.html?search=
+[ info ] myhome.com/index/search/select.html?search= [运行时间：0.021002s][吞吐率：47.61req/s] [内存消耗：2,059.55kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'referer' => 'http://myhome.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->select[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: search[D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php:18]
+---------------------------------------------------------------
+[ 2017-11-11T18:45:15+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/select.html?search=
+[ info ] myhome.com/index/search/select.html?search= [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：2,059.55kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'referer' => 'http://myhome.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->select[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: search[D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php:18]
+---------------------------------------------------------------
+[ 2017-11-11T18:45:16+08:00 ] 127.0.0.1 127.0.0.1 GET /index/note/index.html
+[ info ] myhome.com/index/note/index.html [运行时间：0.059004s][吞吐率：16.95req/s] [内存消耗：4,144.04kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'note',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\NoteController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\NoteController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\note\index.html [ array (
+  0 => 'list',
+  1 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=localhost;port=3306;dbname=seek;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `seek_note` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `seek_note` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `seek_note` LIMIT 0,3 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-11-11T18:45:18+08:00 ] 127.0.0.1 127.0.0.1 GET /index/jottings/index.html
+[ info ] myhome.com/index/jottings/index.html [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：4,145.95kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'jottings',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/note/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\JottingsController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\JottingsController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\jottings\index.html [ array (
+  0 => 'list',
+  1 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=seek;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `seek_jottings` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `seek_jottings` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `seek_jottings` LIMIT 0,2 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-11T18:45:19+08:00 ] 127.0.0.1 127.0.0.1 GET /index/leaveword/index.html
+[ info ] myhome.com/index/leaveword/index.html [运行时间：0.086004s][吞吐率：11.63req/s] [内存消耗：3,964.41kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'leaveword',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/jottings/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\LeavewordController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\LeavewordController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\leaveword\index.html [ array (
+  0 => 'list',
+  1 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=localhost;port=3306;dbname=seek;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `seek_leaver` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `seek_leaver` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-11T18:45:19+08:00 ] 127.0.0.1 127.0.0.1 GET /index/write/index.html
+[ info ] myhome.com/index/write/index.html [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：2,328.09kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'write',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/leaveword/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\WriteController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\WriteController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\write\index.html [ array (
+  0 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T18:45:21+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] myhome.com/index/index/index.html [运行时间：0.057004s][吞吐率：17.54req/s] [内存消耗：3,740.95kb] [文件加载：42]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\index\index.html [ array (
+  0 => 'list',
+  1 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=seek;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `seek_about` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `seek_about` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-11T18:45:22+08:00 ] 127.0.0.1 127.0.0.1 GET /index/leaveword/index.html
+[ info ] myhome.com/index/leaveword/index.html [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：3,744.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'leaveword',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\LeavewordController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\LeavewordController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\leaveword\index.html [ array (
+  0 => 'list',
+  1 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=seek;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `seek_leaver` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `seek_leaver` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-11-11T18:45:26+08:00 ] 127.0.0.1 127.0.0.1 GET /index/write/index.html
+[ info ] myhome.com/index/write/index.html [运行时间：0.028001s][吞吐率：35.71req/s] [内存消耗：2,101.00kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'write',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/leaveword/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\WriteController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\WriteController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\write\index.html [ array (
+  0 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T18:46:37+08:00 ] 127.0.0.1 127.0.0.1 GET /index/write/index.html
+[ info ] myhome.com/index/write/index.html [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：2,101.58kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'write',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/leaveword/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\WriteController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\WriteController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\write\index.html [ array (
+  0 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T18:50:02+08:00 ] 127.0.0.1 127.0.0.1 GET /index/write/index.html
+[ info ] myhome.com/index/write/index.html [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：2,101.34kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'write',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/leaveword/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\WriteController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\WriteController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\write\index.html [ array (
+  0 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T18:50:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/select.html?search=
+[ info ] myhome.com/index/search/select.html?search= [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：2,059.87kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->select[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: search[D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php:18]
+---------------------------------------------------------------
+[ 2017-11-11T18:50:06+08:00 ] 127.0.0.1 127.0.0.1 GET /static/bootstrap/css/bootstrap.min.css.map
+[ info ] myhome.com/static/bootstrap/css/bootstrap.min.css.map [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,609.42kb] [文件加载：27]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'bootstrap',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T18:50:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/select.html?search=
+[ info ] myhome.com/index/search/select.html?search= [运行时间：0.028001s][吞吐率：35.71req/s] [内存消耗：2,059.74kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->select[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: search[D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php:18]
+---------------------------------------------------------------
+[ 2017-11-11T18:50:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index/write/index.html
+[ info ] myhome.com/index/write/index.html [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：2,101.16kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'write',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/leaveword/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\WriteController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\WriteController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\write\index.html [ array (
+  0 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T18:50:54+08:00 ] 127.0.0.1 127.0.0.1 GET /static/bootstrap/css/bootstrap.min.css.map
+[ info ] myhome.com/static/bootstrap/css/bootstrap.min.css.map [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：1,609.42kb] [文件加载：27]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'bootstrap',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T18:50:57+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/select.html?search=
+[ info ] myhome.com/index/search/select.html?search= [运行时间：0.043002s][吞吐率：23.25req/s] [内存消耗：2,389.88kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->select[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=seek;charset=utf8
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1[D:\wamp64\www\myhome\thinkphp5.0\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-11-11T18:51:37+08:00 ] 127.0.0.1 127.0.0.1 GET /index/write/index.html
+[ info ] myhome.com/index/write/index.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：2,101.16kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'write',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/leaveword/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\WriteController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\WriteController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\write\index.html [ array (
+  0 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T18:51:37+08:00 ] 127.0.0.1 127.0.0.1 GET /static/bootstrap/css/bootstrap.min.css.map
+[ info ] myhome.com/static/bootstrap/css/bootstrap.min.css.map [运行时间：0.017001s][吞吐率：58.82req/s] [内存消耗：1,609.42kb] [文件加载：27]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'bootstrap',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T18:51:39+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/select.html?search=
+[ info ] myhome.com/index/search/select.html?search= [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,978.75kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->select[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T18:51:39+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html
+[ info ] myhome.com/index/search/index.html [运行时间：0.024002s][吞吐率：41.66req/s] [内存消耗：2,298.07kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T18:51:39+08:00 ] 127.0.0.1 127.0.0.1 GET /static/bootstrap/css/bootstrap.min.css.map
+[ info ] myhome.com/static/bootstrap/css/bootstrap.min.css.map [运行时间：0.017001s][吞吐率：58.82req/s] [内存消耗：1,609.42kb] [文件加载：27]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'bootstrap',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:03:22+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html
+[ info ] myhome.com/index/search/index.html [运行时间：0.051002s][吞吐率：19.61req/s] [内存消耗：2,299.89kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:03:22+08:00 ] 127.0.0.1 127.0.0.1 GET /static/bootstrap/css/bootstrap.min.css.map
+[ info ] myhome.com/static/bootstrap/css/bootstrap.min.css.map [运行时间：0.018001s][吞吐率：55.55req/s] [内存消耗：1,609.42kb] [文件加载：27]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'bootstrap',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:03:25+08:00 ] 127.0.0.1 127.0.0.1 GET /static/bootstrap/css/bootstrap.min.css.map
+[ info ] myhome.com/static/bootstrap/css/bootstrap.min.css.map [运行时间：0.018001s][吞吐率：55.55req/s] [内存消耗：1,609.42kb] [文件加载：27]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'bootstrap',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:03:26+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/select.html?search=
+[ info ] myhome.com/index/search/select.html?search= [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,979.32kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->select[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:03:26+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html
+[ info ] myhome.com/index/search/index.html [运行时间：0.022001s][吞吐率：45.45req/s] [内存消耗：2,081.94kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:03:27+08:00 ] 127.0.0.1 127.0.0.1 GET /static/bootstrap/css/bootstrap.min.css.map
+[ info ] myhome.com/static/bootstrap/css/bootstrap.min.css.map [运行时间：0.018002s][吞吐率：55.55req/s] [内存消耗：1,609.42kb] [文件加载：27]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'bootstrap',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:03:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index/write/index.html
+[ info ] myhome.com/index/write/index.html [运行时间：0.043002s][吞吐率：23.25req/s] [内存消耗：2,328.70kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'write',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/leaveword/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\WriteController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\WriteController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\write\index.html [ array (
+  0 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:03:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index/write/index.html
+[ info ] myhome.com/index/write/index.html [运行时间：0.024001s][吞吐率：41.67req/s] [内存消耗：2,101.56kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'write',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/leaveword/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\WriteController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\WriteController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\write\index.html [ array (
+  0 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:03:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index/write/index.html
+[ info ] myhome.com/index/write/index.html [运行时间：0.024001s][吞吐率：41.66req/s] [内存消耗：2,101.56kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'write',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/leaveword/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\WriteController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\WriteController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\write\index.html [ array (
+  0 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:03:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index/write/index.html
+[ info ] myhome.com/index/write/index.html [运行时间：0.023002s][吞吐率：43.47req/s] [内存消耗：2,101.56kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'write',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/leaveword/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\WriteController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\WriteController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\write\index.html [ array (
+  0 => 'catgory',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:03:37+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/select.html?search=
+[ info ] myhome.com/index/search/select.html?search= [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,979.32kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->select[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:03:37+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=1
+[ info ] myhome.com/index/search/index.html?result=1 [运行时间：0.020001s][吞吐率：50.00req/s] [内存消耗：2,082.27kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:11:25+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=1
+[ info ] myhome.com/index/search/index.html?result=1 [运行时间：0.042003s][吞吐率：23.81req/s] [内存消耗：2,300.41kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:11:26+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=1
+[ info ] myhome.com/index/search/index.html?result=1 [运行时间：0.032001s][吞吐率：31.25req/s] [内存消耗：2,082.69kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:13:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=1
+[ info ] myhome.com/index/search/index.html?result=1 [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：2,300.56kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:13:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=1
+[ info ] myhome.com/index/search/index.html?result=1 [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：2,082.76kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:13:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=1
+[ info ] myhome.com/index/search/index.html?result=1 [运行时间：0.029001s][吞吐率：34.48req/s] [内存消耗：2,082.76kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:13:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=1
+[ info ] myhome.com/index/search/index.html?result=1 [运行时间：0.030001s][吞吐率：33.33req/s] [内存消耗：2,082.76kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:13:24+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=1
+[ info ] myhome.com/index/search/index.html?result=1 [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：2,082.76kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:13:24+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=1
+[ info ] myhome.com/index/search/index.html?result=1 [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：2,082.76kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/write/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:13:27+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：2,082.11kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:13:52+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：2,300.02kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:13:53+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,082.21kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:13:57+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=1
+[ info ] myhome.com/index/search/index.html?result=1 [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：2,081.95kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:14:19+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=1
+[ info ] myhome.com/index/search/index.html?result=1 [运行时间：0.039003s][吞吐率：25.64req/s] [内存消耗：2,300.08kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:14:32+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.028001s][吞吐率：35.71req/s] [内存消耗：2,082.11kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:15:16+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：2,300.18kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:15:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：2,300.27kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:16:37+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.033001s][吞吐率：30.30req/s] [内存消耗：2,300.27kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:16:38+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,082.19kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:16:38+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：2,082.19kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:16:38+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,082.19kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:16:38+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：2,082.19kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:17:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：2,300.48kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:17:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：2,082.09kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:17:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：2,082.09kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:17:41+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=1
+[ info ] myhome.com/index/search/index.html?result=1 [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：2,082.03kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:18:10+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/select.html?search=
+[ info ] myhome.com/index/search/select.html?search= [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,979.34kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'referer' => 'http://myhome.com/index/search/index.html?result=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->select[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:18:10+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：2,082.34kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/search/index.html?result=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:18:19+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/select.html?search=3d
+[ info ] myhome.com/index/search/select.html?search=3d [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,979.34kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'referer' => 'http://myhome.com/index/search/index.html?result=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'search' => '3d',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->select[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-11T19:18:19+08:00 ] 127.0.0.1 127.0.0.1 GET /index/search/index.html?result=2
+[ info ] myhome.com/index/search/index.html?result=2 [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：2,082.34kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\myhome\thinkphp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'myhome.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://myhome.com/index/search/index.html?result=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.2073097060.1509786046; pgv_pvi=6025164800',
+)
+[ info ] [ PARAM ] array (
+  'result' => '2',
+)
+[ info ] [ RUN ] app\index\controller\SearchController->index[ D:\wamp64\www\myhome\thinkphp5.0\application\index\controller\SearchController.php ]
+[ info ] [ VIEW ] D:\wamp64\www\myhome\thinkphp5.0\public/../application/index\view\search\index.html [ array (
+  0 => 'catgory',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
